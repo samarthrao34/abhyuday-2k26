@@ -1,40 +1,101 @@
-
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABHYUDAY 2K26 | Explore the Infinite</title>
+    <title>ABHYUDAY 2K26 | Where Innovation Meets Creativity</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;600&family=Yatra+One&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
             overflow-x: hidden;
-            background-color: #010208;
-            color: white;
+            background: #2a2048;
+            color: #e8e0f0;
         }
         .font-brand {
             font-family: 'Syne', sans-serif;
             letter-spacing: -0.05em;
         }
+        .font-logo {
+            font-family: 'Yatra One', 'Tiro Devanagari Hindi', serif;
+        }
+        .text-gradient-gold {
+            background: linear-gradient(to bottom, #cfc09f 0%, #ffecb3 20%, #d4a43a 40%, #b38728 80%, #9e731b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+        }
+        .nav-logo-gold {
+            background: linear-gradient(135deg, #cfc09f 0%, #ffecb3 15%, #d4a43a 35%, #ffecb3 50%, #b38728 70%, #ffecb3 85%, #d4a43a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+            filter: drop-shadow(0 0 8px rgba(212,164,58,0.4)) drop-shadow(0 2px 4px rgba(0,0,0,0.4)) drop-shadow(0 4px 12px rgba(212,164,58,0.2));
+            position: relative;
+        }
+        .nav-logo-glass {
+            position: relative;
+            display: inline-block;
+        }
         .glass-pill {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            box-shadow: 0 4px 30px rgba(100, 50, 200, 0.1), inset 0 1px 0 rgba(255,255,255,0.08);
         }
         .grain {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
             pointer-events: none;
             z-index: 50;
-            opacity: 0.05;
+            opacity: 0.04;
             background-image: url("https://grainy-gradients.vercel.app/noise.svg");
         }
+        /* Video-in-text logo */
+        .logo-video-container {
+            position: relative;
+            filter: drop-shadow(0 0 15px rgba(212,164,58,0.5)) drop-shadow(0 0 40px rgba(212,164,58,0.3)) drop-shadow(0 0 80px rgba(212,164,58,0.15));
+        }
+        .logo-glass-edge {
+            pointer-events: none;
+            filter: blur(1.5px) brightness(2);
+            opacity: 0.7;
+            animation: glass-edge-pulse 4s ease-in-out infinite alternate;
+        }
+        @keyframes glass-edge-pulse {
+            0% { opacity: 0.5; filter: blur(1.5px) brightness(1.8); }
+            100% { opacity: 0.85; filter: blur(2px) brightness(2.3); }
+        }
+        .logo-glass-fill {
+            pointer-events: none;
+            mix-blend-mode: overlay;
+            opacity: 0.3;
+        }
+        .logo-glass-refraction {
+            pointer-events: none;
+            mix-blend-mode: overlay;
+            opacity: 0.2;
+            filter: blur(0.5px);
+        }
+        .logo-glass-specular {
+            pointer-events: none;
+            mix-blend-mode: screen;
+            opacity: 0;
+            animation: specular-sweep 5s ease-in-out infinite;
+        }
+        @keyframes specular-sweep {
+            0% { opacity: 0; background-position: -200% center; }
+            35% { opacity: 0.6; }
+            65% { opacity: 0.6; }
+            100% { opacity: 0; background-position: 200% center; }
+        }
         .earth-glow {
-            box-shadow: 0 -20px 100px 20px rgba(59, 130, 246, 0.3),
-                        0 -50px 200px 40px rgba(30, 58, 138, 0.2);
+            box-shadow: 0 -20px 100px 20px rgba(100, 60, 180, 0.3),
+                        0 -50px 200px 40px rgba(60, 20, 120, 0.25);
         }
         @keyframes slow-rotate {
             from { transform: rotate(0deg); }
@@ -43,21 +104,168 @@
         .animate-slow-rotate {
             animation: slow-rotate 120s linear infinite;
         }
+
+        /* Flip Clock Styles */
+        .flip-clock-card {
+            position: relative;
+            width: 5rem;
+            height: 5.5rem;
+            perspective: 500px;
+            transform-style: preserve-3d;
+        }
+        @media (min-width: 768px) {
+            .flip-clock-card {
+                width: 7rem;
+                height: 7.5rem;
+            }
+        }
+
+        .flip-half {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            overflow: hidden;
+            border-radius: 0.75rem;
+        }
+        .flip-half.flip-top {
+            top: 0;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            background: linear-gradient(180deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.05) 100%);
+            border: 1px solid rgba(168, 130, 255, 0.15);
+            border-bottom: none;
+            box-shadow: inset 0 1px 1px rgba(255,255,255,0.06);
+        }
+        .flip-half.flip-bottom {
+            bottom: 0;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            background: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.07) 100%);
+            border: 1px solid rgba(168, 130, 255, 0.15);
+            border-top: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+        }
+
+        .flip-half-inner {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .flip-half.flip-top .flip-half-inner,
+        .flip-panel-front .flip-half-inner {
+            top: 0;
+            height: 200%;
+            align-items: center;
+        }
+        .flip-half.flip-bottom .flip-half-inner,
+        .flip-panel-back .flip-half-inner {
+            bottom: 0;
+            height: 200%;
+            align-items: center;
+        }
+
+        .flip-half-inner span {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #e8d5ff;
+            text-shadow: 0 2px 8px rgba(139, 92, 246, 0.3);
+            will-change: transform;
+        }
+        @media (min-width: 768px) {
+            .flip-half-inner span {
+                font-size: 3rem;
+            }
+        }
+
+        /* Flip panels - the animated parts */
+        .flip-panel {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            overflow: hidden;
+            backface-visibility: hidden;
+            will-change: transform, box-shadow;
+        }
+
+        .flip-panel-front {
+            top: 0;
+            transform-origin: bottom center;
+            border-radius: 0.75rem 0.75rem 0 0;
+            background: linear-gradient(180deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.05) 100%);
+            border: 1px solid rgba(168, 130, 255, 0.15);
+            border-bottom: none;
+            animation: flip-top-down 0.5s cubic-bezier(0.37, 0, 0.63, 1) forwards;
+            z-index: 3;
+        }
+
+        .flip-panel-back {
+            bottom: 0;
+            transform-origin: top center;
+            border-radius: 0 0 0.75rem 0.75rem;
+            background: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.07) 100%);
+            border: 1px solid rgba(168, 130, 255, 0.15);
+            border-top: none;
+            animation: flip-bottom-up 0.5s cubic-bezier(0.37, 0, 0.63, 1) forwards;
+            animation-delay: 0.25s;
+            transform: rotateX(90deg);
+            z-index: 2;
+        }
+
+        @keyframes flip-top-down {
+            0% {
+                transform: rotateX(0deg);
+                box-shadow: 0 0 0 rgba(0,0,0,0);
+            }
+            50% {
+                box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            }
+            100% {
+                transform: rotateX(-90deg);
+                box-shadow: 0 0 0 rgba(0,0,0,0);
+            }
+        }
+        @keyframes flip-bottom-up {
+            0% {
+                transform: rotateX(90deg);
+                box-shadow: 0 0 0 rgba(0,0,0,0);
+            }
+            50% {
+                box-shadow: 0 -4px 16px rgba(0,0,0,0.25);
+            }
+            100% {
+                transform: rotateX(0deg);
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            }
+        }
+
+        .flip-divider {
+            position: absolute;
+            top: 50%;
+            left: 4%;
+            width: 92%;
+            height: 1px;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 5;
+            transform: translateY(-0.5px);
+            box-shadow: 0 1px 0 rgba(255,255,255,0.04);
+        }
+        .golden-glow-text {
+            background: none;
+            color: #fff9c4;
+            -webkit-background-clip: initial;
+            -webkit-text-fill-color: initial;
+            background-clip: initial;
+            font-weight: 700;
+        }
     </style>
-<script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4",
-    "framer-motion": "https://esm.sh/framer-motion@^12.33.0",
-    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
-  }
-}
-</script>
 </head>
 <body>
     <div class="grain"></div>
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
 </body>
 </html>
