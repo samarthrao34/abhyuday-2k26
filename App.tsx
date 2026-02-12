@@ -1,12 +1,14 @@
 
 import React, { useEffect, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, MapPin, Calendar, Mail, Phone, Instagram, Twitter, Youtube, Linkedin } from 'lucide-react';
 import Navbar from './components/Navbar';
 import FloatingElements from './components/FloatingElements';
-import ThreeDCard from './components/ThreeDCard';
 import Countdown from './components/Countdown';
-import { EVENTS } from './constants';
+import FestSegments from './components/FestSegments';
+import Schedule from './components/Schedule';
+import Gallery from './components/Gallery';
+import Coordinators from './components/Coordinators';
 
 const App: React.FC = () => {
   const { scrollY } = useScroll();
@@ -250,58 +252,106 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Events Section */}
-      <section id="events" className="relative z-50 py-32 md:py-48 px-8 bg-gradient-to-b from-transparent via-[#352558]/80 to-[#2a2048]">
+      {/* Fest Segments - Tech, Cultural, Literary */}
+      <FestSegments />
+
+      {/* Schedule Timeline */}
+      <Schedule />
+
+      {/* Gallery */}
+      <Gallery />
+
+      {/* Coordinators / Team */}
+      <Coordinators />
+
+      {/* Enhanced Footer */}
+      <footer id="contact" className="relative z-50 py-20 px-8 bg-gradient-to-b from-[#352558] to-[#1e1835]">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-20 text-center md:text-left">
-            <h2 className="text-4xl md:text-6xl font-brand font-bold mb-4 tracking-tight text-purple-100">Galactic Missions</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-violet-400 to-purple-500 rounded-full mb-6 mx-auto md:mx-0"></div>
-            <p className="text-purple-200/60 text-lg max-w-xl mx-auto md:mx-0">Embark on journeys through technical mastery, cultural fusion, and literary brilliance.</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {EVENTS.map((event) => (
-              <ThreeDCard key={event.id} event={event} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Schedule Section */}
-      <section id="schedule" className="relative z-50 py-32 md:py-48 px-8 bg-[#2a2048]">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-          <motion.div 
-             initial={{ opacity: 0, x: -30 }}
-             whileInView={{ opacity: 1, x: 0 }}
-             viewport={{ once: true }}
-          >
-            <h2 className="text-5xl md:text-7xl font-brand font-black mb-8 uppercase tracking-tighter text-center lg:text-left text-purple-100">CELESTIAL <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-fuchsia-400 font-brand">BEATS</span></h2>
-            <p className="text-purple-200/60 text-xl leading-relaxed mb-10 text-center lg:text-left">
-              When the stars align, the music starts. Join thousands of dreamers for a night that transcends planetary boundaries.
-            </p>
-            <div className="flex justify-center lg:justify-start">
-              <button className="px-10 py-4 bg-gradient-to-r from-violet-600 to-purple-700 text-white font-bold rounded-xl hover:from-violet-500 hover:to-fuchsia-500 transition-all transform hover:-rotate-2 shadow-lg shadow-purple-500/25">
-                VIEW SCHEDULE
-              </button>
+          {/* Main Footer Content */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            {/* Brand Section */}
+            <div className="lg:col-span-1">
+              <span className="font-logo text-3xl tracking-tight text-gradient-gold">अभ्युday'26</span>
+              <p className="text-purple-200/50 mt-4 text-sm leading-relaxed">
+                Where Innovation Meets Creativity. Join us for three days of extraordinary experiences at Ashoka Institute of Technology and Management.
+              </p>
+              <div className="flex gap-4 mt-6">
+                <a href="#" className="p-2.5 rounded-xl bg-white/5 border border-purple-400/15 text-purple-300/60 hover:text-violet-400 hover:border-violet-400/40 transition-all">
+                  <Instagram className="w-5 h-5" />
+                </a>
+                <a href="#" className="p-2.5 rounded-xl bg-white/5 border border-purple-400/15 text-purple-300/60 hover:text-violet-400 hover:border-violet-400/40 transition-all">
+                  <Twitter className="w-5 h-5" />
+                </a>
+                <a href="#" className="p-2.5 rounded-xl bg-white/5 border border-purple-400/15 text-purple-300/60 hover:text-violet-400 hover:border-violet-400/40 transition-all">
+                  <Youtube className="w-5 h-5" />
+                </a>
+                <a href="#" className="p-2.5 rounded-xl bg-white/5 border border-purple-400/15 text-purple-300/60 hover:text-violet-400 hover:border-violet-400/40 transition-all">
+                  <Linkedin className="w-5 h-5" />
+                </a>
+              </div>
             </div>
-          </motion.div>
-          <div className="relative aspect-video glass-pill rounded-3xl overflow-hidden border border-purple-400/15 shadow-2xl shadow-purple-500/10">
-             <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1000&auto=format&fit=crop" className="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-700" alt="Concert" />
-             <div className="absolute inset-0 bg-purple-600/20"></div>
-          </div>
-        </div>
-      </section>
 
-      <footer id="contact" className="relative z-50 py-16 px-8 border-t border-purple-500/15 bg-[#241c3a]">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
-          <div className="flex flex-col items-center md:items-start gap-2">
-            <span className="font-logo text-2xl tracking-tight text-gradient-gold">अभ्yuday'26</span>
-            <span className="text-purple-300/40 text-xs tracking-widest uppercase">NMAMIT Nitte • 2026</span>
+            {/* Quick Links */}
+            <div>
+              <h4 className="font-brand font-bold text-purple-100 mb-6">Quick Links</h4>
+              <ul className="space-y-3">
+                {['Home', 'Events', 'Schedule', 'Gallery', 'Team'].map((link) => (
+                  <li key={link}>
+                    <a href={`#${link.toLowerCase()}`} className="text-purple-200/50 hover:text-violet-400 transition-colors text-sm">
+                      {link}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Events */}
+            <div>
+              <h4 className="font-brand font-bold text-purple-100 mb-6">Fest Categories</h4>
+              <ul className="space-y-3">
+                <li><a href="#events" className="text-purple-200/50 hover:text-cyan-400 transition-colors text-sm">Tech Fest</a></li>
+                <li><a href="#events" className="text-purple-200/50 hover:text-pink-400 transition-colors text-sm">Cultural Fest</a></li>
+                <li><a href="#events" className="text-purple-200/50 hover:text-amber-400 transition-colors text-sm">Literary Fest</a></li>
+              </ul>
+            </div>
+
+            {/* Contact Info */}
+            <div>
+              <h4 className="font-brand font-bold text-purple-100 mb-6">Contact Us</h4>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-violet-400 mt-0.5" />
+                  <span className="text-purple-200/50 text-sm">Ashoka Institute of Technology and Management, Varanasi, UP, India</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Mail className="w-5 h-5 text-violet-400" />
+                  <a href="mailto:abhyuday@aitm.edu" className="text-purple-200/50 hover:text-violet-400 transition-colors text-sm">abhyuday@aitm.edu</a>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Phone className="w-5 h-5 text-violet-400" />
+                  <a href="tel:+919876543210" className="text-purple-200/50 hover:text-violet-400 transition-colors text-sm">+91 98765 43210</a>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Calendar className="w-5 h-5 text-violet-400" />
+                  <span className="text-purple-200/50 text-sm">February 23-25, 2026</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="flex gap-10 text-sm font-medium text-purple-300/40">
-            <a href="#" className="hover:text-violet-400 transition-colors">Instagram</a>
-            <a href="#" className="hover:text-violet-400 transition-colors">Twitter</a>
-            <a href="#" className="hover:text-violet-400 transition-colors">Contact</a>
+
+          {/* Divider */}
+          <div className="w-full h-px bg-gradient-to-r from-transparent via-purple-400/20 to-transparent mb-8" />
+
+          {/* Bottom Bar */}
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-purple-300/40 text-sm">
+              © 2026 ABHYUDAY. Ashoka Institute of Technology and Management. All rights reserved.
+            </p>
+            <div className="flex gap-6 text-sm text-purple-300/40">
+              <a href="#" className="hover:text-violet-400 transition-colors">Privacy Policy</a>
+              <a href="#" className="hover:text-violet-400 transition-colors">Terms of Service</a>
+              <a href="#" className="hover:text-violet-400 transition-colors">Code of Conduct</a>
+            </div>
           </div>
         </div>
       </footer>
