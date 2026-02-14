@@ -133,7 +133,7 @@ const App: React.FC = () => {
       <section id="home" className="relative h-screen w-full flex flex-col items-center justify-center overflow-x-hidden px-4">
         <div
           className="absolute inset-0 z-0 bg-center bg-cover"
-          style={{ backgroundImage: "url('/cultural-bg.jpeg')" }}
+          style={{ backgroundImage: "url('./bg-image.png')", filter: 'brightness(1.18) contrast(1.18)' }}
         />
         <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
 
@@ -144,32 +144,31 @@ const App: React.FC = () => {
             <img
               src="/abhyuday.png"
               alt="Abhyuday'26"
-              className="w-full h-auto object-contain"
+              className="w-full h-auto object-contain scale-[0.95] sm:scale-[1] md:scale-[1.05] lg:scale-[1.1]"
               loading="eager"
               decoding="async"
               style={{
-                filter: 'drop-shadow(0 0 18px rgba(255,220,140,0.65)) drop-shadow(0 0 40px rgba(212,164,58,0.55)) drop-shadow(0 10px 28px rgba(0,0,0,0.55)) brightness(1.15)',
+                filter: 'drop-shadow(0 0 32px #ffe47a) drop-shadow(0 0 60px #d4a43a) drop-shadow(0 10px 40px rgba(0,0,0,0.85)) brightness(1.18)',
               }}
             />
           </div>
 
           {/* Countdown - right below logo */}
-          <div className="scale-[0.35] sm:scale-[0.4] md:scale-[0.45] lg:scale-[0.5] origin-center -mt-2 sm:-mt-3 mb-2 sm:mb-3"><Countdown /></div>
+          <div className="scale-[1.1] sm:scale-[0.9] md:scale-[0.7] lg:scale-[0.5] origin-center -mt-2 sm:-mt-3 mb-2 sm:mb-3"><Countdown /></div>
 
           <div className="flex flex-col items-center w-full max-w-3xl px-2 gap-0.5 sm:gap-1 -mt-2 sm:-mt-3">
             <p className="text-xs sm:text-sm md:text-lg lg:text-xl italic tracking-[0.08em] golden-glow-text" style={{ fontFamily: "'Cormorant Garamond', serif" }}>Where Innovation Meets Creativity!</p>
             <p className="text-[10px] sm:text-xs md:text-base lg:text-lg italic tracking-[0.15em] sm:tracking-[0.25em] golden-glow-text" style={{ fontFamily: "'Cormorant Garamond', serif" }}>Ashoka Institute of Technology and Management, Varanasi</p>
 
             {/* Organization Logos */}
-            <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mt-3 sm:mt-4 flex-wrap px-4">
-              {[
-                { src: '/ic_logo.png', alt: 'Ashoka Institute' },
-                { src: '/IIC.png', alt: 'IIC' },
-                { src: '/IOE.png', alt: 'Institution of Engineers' },
-                { src: '/IEEE.png', alt: 'IEEE' },
-                { src: '/CSI-LOGO.png', alt: 'CSI' },
-                { src: '/MOKSH.png', alt: 'MOKSH' },
-              ].map((logo) => (
+            <div className="flex items-center justify-center mt-3 sm:mt-4 px-4 w-full">
+              <div className="flex gap-4 sm:gap-6 md:gap-8">
+                {[
+                  { src: '/cipher.jpg', alt: 'CS Cipher' },
+                  { src: '/MOKSH.png', alt: 'MOKSH' },
+                  { src: '/IEEE.png', alt: 'IEEE' },
+                  { src: '/IIC.png', alt: 'IIC' },
+                ].map((logo) => (
                   <div
                     key={logo.alt}
                     onMouseEnter={() => setActiveLogo(logo.alt)}
@@ -200,7 +199,48 @@ const App: React.FC = () => {
                       decoding="async"
                     />
                   </div>
-              ))}
+                ))}
+              </div>
+              <div className="w-12 sm:w-14 md:w-16" />
+              <div className="flex gap-4 sm:gap-6 md:gap-8">
+                {[
+                  { src: '/ic_logo.png', alt: 'IC' },
+                  { src: '/IOE.png', alt: 'IOE' },
+                  { src: '/CSI-LOGO.png', alt: 'DCIC' },
+                  { src: '/GeeksForGeeks_logo.png', alt: 'GFG' },
+                ].map((logo) => (
+                  <div
+                    key={logo.alt}
+                    onMouseEnter={() => setActiveLogo(logo.alt)}
+                    onMouseLeave={() => setActiveLogo(null)}
+                    className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 rounded-full flex items-center justify-center overflow-hidden cursor-pointer group"
+                    style={{
+                      background: logo.alt === 'MOKSH' ? 'transparent' : '#ffffff',
+                      border: '2px solid rgba(212,164,58,0.4)',
+                      boxShadow: '0 0 16px rgba(212,164,58,0.25), 0 0 30px rgba(255,220,140,0.15), 0 2px 12px rgba(0,0,0,0.3)',
+                      transition: 'transform 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s ease, border-color 0.3s ease',
+                    }}
+                    onMouseOver={(e) => {
+                      e.currentTarget.style.transform = 'scale(1.18)';
+                      e.currentTarget.style.borderColor = 'rgba(255,220,140,0.9)';
+                      e.currentTarget.style.boxShadow = '0 0 24px rgba(212,164,58,0.7), 0 0 48px rgba(255,220,140,0.45), 0 4px 20px rgba(0,0,0,0.4)';
+                    }}
+                    onMouseOut={(e) => {
+                      e.currentTarget.style.transform = 'scale(1)';
+                      e.currentTarget.style.borderColor = 'rgba(212,164,58,0.4)';
+                      e.currentTarget.style.boxShadow = '0 0 16px rgba(212,164,58,0.25), 0 0 30px rgba(255,220,140,0.15), 0 2px 12px rgba(0,0,0,0.3)';
+                    }}
+                  >
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      className={logo.alt === 'MOKSH' ? "h-full w-full object-cover rounded-full" : "h-[72%] w-[72%] object-contain"}
+                      loading="eager"
+                      decoding="async"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </motion.div>
@@ -444,12 +484,22 @@ const App: React.FC = () => {
 
             {/* Column 1 — Branding */}
             <div className="flex flex-col items-center md:items-start gap-4">
-              <img src="/abhyuday logo.jpeg" alt="Ashoka Institute Logo" className="w-16 h-16 rounded-xl object-contain bg-white/10 p-1" />
-              <h3 className="font-brand text-xl sm:text-2xl font-bold text-gradient-gold tracking-tight">Abhyuday 2025</h3>
-              <p className="text-amber-300/80 text-sm font-medium">April 26–27, 2026</p>
+              <div className="flex gap-3 items-center">
+                <img src="/college-logo.png" alt="Ashoka Institute Logo" className="w-20 h-20 rounded-xl object-contain bg-white/10 p-1" />
+              </div>
+              <h3 className="font-brand text-xl sm:text-2xl font-bold text-gradient-gold tracking-tight">Abhyuday 2026</h3>
+              <p className="text-amber-300/80 text-sm font-medium">2026</p>
               <p className="text-purple-200/60 text-sm leading-relaxed text-center md:text-left max-w-xs">
                 Annual Technical Fest of Ashoka Institute of Technology and Management. A platform for innovation, creativity and technical excellence.
               </p>
+              <div className="flex gap-4 mt-2">
+                <a href="https://www.instagram.com/abhyuday2k26?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:scale-110 transition-transform">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-pink-400"><rect x="2" y="2" width="20" height="20" rx="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.5" y2="6.5" /></svg>
+                </a>
+                <a href="https://www.linkedin.com/school/ashoka-institute-of-technology-and-management-varanasi/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:scale-110 transition-transform">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-blue-400"><rect x="2" y="2" width="20" height="20" rx="5" /><path d="M16 8a6 6 0 0 1 6 6v5h-4v-5a2 2 0 0 0-4 0v5h-4v-5a6 6 0 0 1 6-6z" /><circle cx="8.5" cy="8.5" r="1.5" /><line x1="6" y1="20" x2="6" y2="9" /></svg>
+                </a>
+              </div>
             </div>
 
             {/* Column 2 — Quick Links */}
@@ -458,7 +508,6 @@ const App: React.FC = () => {
               <a href="#hero" className="text-sm text-purple-300/70 hover:text-amber-300 transition-colors">Home</a>
               <a href="#events" className="text-sm text-purple-300/70 hover:text-amber-300 transition-colors">Events</a>
               <a href="#schedule" className="text-sm text-purple-300/70 hover:text-amber-300 transition-colors">Schedule</a>
-              <a href="#chief-guest" className="text-sm text-purple-300/70 hover:text-amber-300 transition-colors">Chief Guest</a>
               <a href="#coordinators" className="text-sm text-purple-300/70 hover:text-amber-300 transition-colors">Faculty Coordinators</a>
               <a href="https://ashokainstitute.com" target="_blank" rel="noopener noreferrer" className="text-sm text-purple-300/70 hover:text-amber-300 transition-colors">ashokainstitute.com</a>
             </div>
@@ -480,9 +529,12 @@ const App: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-purple-500/10 bg-[#150f25]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-8 py-5 flex items-center justify-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-8 py-5 flex flex-col items-center justify-center gap-1">
             <p className="text-[11px] sm:text-xs text-purple-300/40 text-center">
               © 2025 Ashoka Institute of Technology and Management. All rights reserved.
+            </p>
+            <p className="text-[11px] sm:text-xs text-purple-300/60 text-center mt-1">
+              Made by <span className="font-semibold text-amber-300">Samarth Rao</span>
             </p>
           </div>
         </div>

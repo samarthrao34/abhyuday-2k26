@@ -23,12 +23,12 @@ const FlipCard = React.memo(({ value, label }: { value: number; label: string })
   return (
     <div className="flex flex-col items-center gap-2">
       <div className="flip-clock-card">
-        <div className="flip-half flip-top"><div className="flip-half-inner"><span>{flipping ? nextDisplay : currentDisplay}</span></div></div>
-        <div className="flip-half flip-bottom"><div className="flip-half-inner"><span>{currentDisplay}</span></div></div>
+        <div className="flip-half flip-top"><div className="flip-half-inner"><span className="text-white">{flipping ? nextDisplay : currentDisplay}</span></div></div>
+        <div className="flip-half flip-bottom"><div className="flip-half-inner"><span className="text-white">{currentDisplay}</span></div></div>
         {flipping && (
           <>
-            <div className="flip-panel flip-panel-front" key={`front-${nextDisplay}`}><div className="flip-half-inner"><span>{currentDisplay}</span></div></div>
-            <div className="flip-panel flip-panel-back" key={`back-${nextDisplay}`}><div className="flip-half-inner"><span>{nextDisplay}</span></div></div>
+            <div className="flip-panel flip-panel-front" key={`front-${nextDisplay}`}><div className="flip-half-inner"><span className="text-white">{currentDisplay}</span></div></div>
+            <div className="flip-panel flip-panel-back" key={`back-${nextDisplay}`}><div className="flip-half-inner"><span className="text-white">{nextDisplay}</span></div></div>
           </>
         )}
         <div className="flip-divider" />
@@ -55,7 +55,7 @@ const Countdown: React.FC = () => {
   const [timeLeft, setTimeLeft] = useState(calcTimeLeft);
   useEffect(() => { const timer = setInterval(() => setTimeLeft(calcTimeLeft()), 1000); return () => clearInterval(timer); }, []);
   return (
-    <div className="flex gap-3 sm:gap-4 md:gap-8 justify-center items-center mt-8 sm:mt-12 mb-6 sm:mb-8">
+    <div className="flex gap-3 sm:gap-4 md:gap-8 justify-center items-center mt-8 sm:mt-12 mb-6 sm:mb-8 text-white">
       <FlipCard value={timeLeft.days} label="Days" />
       <FlipCard value={timeLeft.hours} label="Hours" />
       <FlipCard value={timeLeft.minutes} label="Minutes" />

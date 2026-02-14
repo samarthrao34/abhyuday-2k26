@@ -9,9 +9,12 @@ interface Props {
 
 const EventDetailsModal: React.FC<Props> = ({ event, onClose }) => {
   if (!event) return null;
+  const handleModalClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+  };
   return (
-    <div className="fixed inset-0 z-[120] flex items-center justify-center p-3 sm:p-4 bg-black/60 overflow-y-auto">
-      <div className="relative w-full max-w-3xl rounded-2xl sm:rounded-3xl glass-pill border border-purple-400/20 overflow-hidden my-auto max-h-[95vh] overflow-y-auto">
+    <div className="fixed inset-0 z-[120] flex items-center justify-center p-3 sm:p-4 bg-black/60 overflow-y-auto" onClick={onClose}>
+      <div className="relative w-full max-w-3xl rounded-2xl sm:rounded-3xl glass-pill border border-purple-400/20 overflow-hidden my-auto max-h-[95vh] overflow-y-auto" onClick={handleModalClick}>
         <button onClick={onClose} className="absolute top-3 right-3 p-2 rounded-full bg-white/10 hover:bg-white/20">
           <X className="w-5 h-5" />
         </button>

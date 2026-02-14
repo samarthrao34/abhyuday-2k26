@@ -1,16 +1,11 @@
-import React, { useMemo, useState } from 'react';
+
+import React, { useState } from 'react';
 import { GALLERY } from '../constants';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const filters = ['all', 'highlights', 'technical', 'cultural', 'literary'] as const;
-
-type Filter = typeof filters[number];
-
 const Gallery: React.FC = () => {
-  const [filter, setFilter] = useState<Filter>('all');
   const [active, setActive] = useState<string | null>(null);
-
-  const items = useMemo(() => GALLERY.filter(g => filter === 'all' ? true : g.category === filter), [filter]);
+  const items = GALLERY;
   const activeItem = GALLERY.find(g => g.id === active) || null;
 
   return (
@@ -21,26 +16,44 @@ const Gallery: React.FC = () => {
           <p className="text-sm sm:text-base text-purple-200/70">Relive the energy from previous editions.</p>
         </div>
 
-        <div className="flex justify-center gap-2 flex-wrap mb-6 sm:mb-10">
-          {filters.map(f => (
-            <button key={f} onClick={() => setFilter(f)} className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border text-xs sm:text-sm ${filter===f? 'bg-violet-600 text-white border-violet-500' : 'border-purple-400/30 text-purple-200/80 hover:bg-white/5'}`}>
-              {f.toUpperCase()}
-            </button>
-          ))}
-        </div>
+
 
         <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 [column-fill:_balance]"><div className="[&>img]:mb-4">
           {items.map(i => (
-            <img key={i.id} onClick={() => setActive(i.id)} src={i.src} alt={i.alt} className="w-full rounded-xl hover:opacity-90 transition cursor-zoom-in" />
+            <img
+              key={i.id}
+              onClick={() => setActive(i.id)}
+              src={i.src}
+              alt={i.alt}
+              className="w-full rounded-xl hover:opacity-90 transition cursor-zoom-in aspect-[16/9] object-cover bg-black"
+              style={{ aspectRatio: '16/9', objectFit: 'cover', backgroundColor: '#000' }}
+            />
           ))}
         </div></div>
       </div>
 
       <AnimatePresence>
         {activeItem && (
-          <motion.div className="fixed inset-0 bg-black/70 z-[120] flex items-center justify-center p-6" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setActive(null)}>
-            <motion.img src={activeItem.src} alt={activeItem.alt} className="max-h-[85vh] rounded-2xl shadow-2xl" initial={{ scale: 0.95 }} animate={{ scale: 1 }} exit={{ scale: 0.95 }} />
-          </motion.div>
+          <>
+            {/* Blur the background when modal is open */}
+            <motion.div
+              className="fixed inset-0 z-[119] backdrop-blur-md bg-black/40"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            />
+            <motion.div className="fixed inset-0 z-[120] flex items-center justify-center p-6" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setActive(null)}>
+              <motion.img
+                src={activeItem.src}
+                alt={activeItem.alt}
+                className="max-h-[85vh] rounded-2xl shadow-2xl aspect-[16/9] object-cover bg-black"
+                style={{ aspectRatio: '16/9', objectFit: 'cover', backgroundColor: '#000' }}
+                initial={{ scale: 0.95 }}
+                animate={{ scale: 1 }}
+                exit={{ scale: 0.95 }}
+              />
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </section>

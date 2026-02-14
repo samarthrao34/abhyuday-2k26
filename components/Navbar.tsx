@@ -11,22 +11,25 @@ const Navbar: React.FC = () => {
     if (href.startsWith('#')) {
       e.preventDefault();
       const id = href.replace('#', '');
-      if (id === 'all-events') {
-        window.location.hash = '#all-events';
-        return;
-      }
-      if (id === 'home') {
-        window.location.hash = '#home';
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        return;
-      }
-      // For same-page sections
       window.location.hash = href;
-      const el = document.getElementById(id);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 0);
+    } else if (href.startsWith('/#')) {
+      e.preventDefault();
+      const id = href.replace('/#', '');
+      window.location.hash = `#${id}`;
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 0);
     }
+    // External links handled by default
   }, []);
 
   return (
@@ -44,14 +47,14 @@ const Navbar: React.FC = () => {
         {/* Center: Navigation bar */}
         <div className="flex-1 flex justify-center">
           <div
-            className="flex items-center gap-3 xl:gap-4 whitespace-nowrap flex-nowrap px-6 py-2.5 rounded-full"
-            style={{
-              background: 'linear-gradient(135deg, rgba(10,5,25,0.55) 0%, rgba(20,10,40,0.45) 100%)',
-              backdropFilter: 'blur(20px)',
-              WebkitBackdropFilter: 'blur(20px)',
-              border: '1px solid rgba(212,164,58,0.2)',
-              boxShadow: '0 4px 30px rgba(0,0,0,0.25), 0 0 15px rgba(212,164,58,0.05)',
-            }}
+              className="flex items-center gap-3 xl:gap-4 whitespace-nowrap flex-nowrap px-6 py-2.5 rounded-full"
+              style={{
+                background: 'linear-gradient(135deg, #2a1a12 0%, #22160f 100%)',
+                backdropFilter: 'blur(20px)',
+                WebkitBackdropFilter: 'blur(20px)',
+                border: '1px solid rgba(212,164,58,0.2)',
+                boxShadow: '0 4px 30px rgba(0,0,0,0.25), 0 0 15px rgba(212,164,58,0.05)',
+              }}
           >
             {NAV_ITEMS.map((item, i) => {
               const isExternal = item.href.startsWith('http');
