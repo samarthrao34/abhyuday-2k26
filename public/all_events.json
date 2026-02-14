@@ -1,0 +1,722 @@
+[
+    {
+        "Sheet": "MBA",
+        "SNo": "1",
+        "EventName": "Innovative Gambit – Pitch the Future",
+        "Date": "25 Feb 2026",
+        "Time": "10:00 AM",
+        "Venue": "F12/F13",
+        "Fee": "₹100",
+        "Coordinator": "Dr. Sharmila Singh, Satya Gupta"
+    },
+    {
+        "Sheet": "MBA",
+        "SNo": "2",
+        "EventName": "GD Model Presentation (SEZ in India)",
+        "Date": "25 Feb 2026",
+        "Time": "10:00 AM",
+        "Venue": "GD Room",
+        "Coordinator": "Dr. Amit Kr. Singh, Arya Tripathi"
+    },
+    {
+        "Sheet": "MBA",
+        "SNo": "3",
+        "EventName": "Fusion Fiesta (Recorded Video)",
+        "Date": "26 Feb 2026",
+        "Time": "10:00 AM",
+        "Venue": "F-12",
+        "Fee": "₹100",
+        "Coordinator": "Dr. Charu Agrawal, Divyanshu Kushwaha"
+    },
+    {
+        "Sheet": "MBA",
+        "SNo": "4",
+        "EventName": "MODEX / Poster Gallery",
+        "Date": "25 Feb 2026",
+        "Time": "10:00 AM",
+        "Venue": "F12/F13",
+        "Coordinator": "Dr. Priti Rai, Mohd. Asad Ali Khan"
+    },
+    {
+        "Sheet": "MBA",
+        "SNo": "5",
+        "EventName": "Management Edu-Talk (Vikshit Bharat 2047)",
+        "Date": "25 Feb 2026",
+        "Time": "11:00 AM",
+        "Venue": "Buddha Hall (Ground Floor)",
+        "Coordinator": "Dr. Pallavi Singh, Mukta Mandal"
+    },
+    {
+        "Sheet": "MBA",
+        "SNo": "6",
+        "EventName": "Mission Samarthya (Ashoka's Social Cause)",
+        "Date": "25 - 26 Feb 2026",
+        "Time": "10:30 AM",
+        "Venue": "F-13",
+        "Fee": "₹100",
+        "Coordinator": "Prof. Charu Agarwal, Divyanshu Kushwaha"
+    },
+    {
+        "Sheet": "Bio-Tech",
+        "SNo": "1",
+        "EventName": "Truth Pulse",
+        "Date": "25 Feb 2026",
+        "Time": "10:30 AM onwards",
+        "Venue": "BT Department",
+        "Fee": "₹100",
+        "Coordinator": "Dr. Farhan Ahmed, Prity Pandey"
+    },
+    {
+        "Sheet": "Bio-Tech",
+        "SNo": "2",
+        "EventName": "Step Smart Challenge",
+        "Date": "25 Feb 2026",
+        "Time": "10:30 AM onwards",
+        "Venue": "BT Department",
+        "Fee": "₹100",
+        "Coordinator": "Ms. Arpita Singh, Unnati Patel"
+    },
+    {
+        "Sheet": "Bio-Tech",
+        "SNo": "3",
+        "EventName": "Float & Focus",
+        "Date": "25 Feb 2026",
+        "Time": "10:30 AM onwards",
+        "Venue": "BT Department",
+        "Fee": "₹100",
+        "Coordinator": "Ms. Shaini Jaiswal, Mansi Srivastava"
+    },
+    {
+        "Sheet": "Bio-Tech",
+        "SNo": "4",
+        "EventName": "Mute Message Mayhem",
+        "Date": "26 Feb 2026",
+        "Time": "10:30 AM onwards",
+        "Venue": "BT Department",
+        "Fee": "₹100",
+        "Coordinator": "Ms. Arifa Siddiqui, Ragini Mishra"
+    },
+    {
+        "Sheet": "Bio-Tech",
+        "SNo": "5",
+        "EventName": "Link It Fast",
+        "Date": "26 Feb 2026",
+        "Time": "10:30 AM onwards",
+        "Venue": "BT Department",
+        "Fee": "₹100",
+        "Coordinator": "Dr. Sumedha Ojha, Kriti Kumari"
+    },
+    {
+        "Sheet": "Bio-Tech",
+        "SNo": "6",
+        "EventName": "Crimson Lab",
+        "Date": "26 Feb 2026",
+        "Time": "10:30 AM onwards",
+        "Venue": "BT Department",
+        "Fee": "₹100",
+        "Coordinator": "Mr. Shubham Yadav, Himank Kumar"
+    },
+    {
+        "Sheet": "B.Pharm",
+        "SNo": "1",
+        "EventName": "AD MAD Show",
+        "Date": "25/02/2026",
+        "Time": "10:00 AM - 2:00 PM",
+        "Venue": "Pharma Department",
+        "Coordinator": "Dr. Ravi Tripathi, Mr. Somendra Maurya"
+    },
+    {
+        "Sheet": "B.Pharm",
+        "SNo": "2",
+        "EventName": "Pharmacy Quiz",
+        "Date": "25/02/2026",
+        "Time": "10:00 AM - 2:00 PM",
+        "Venue": "Pharma Department",
+        "Coordinator": "Mr. Awanish km. Shrivastava, Mr. Vishal Shrivastava"
+    },
+    {
+        "Sheet": "B.Pharm",
+        "SNo": "3",
+        "EventName": "Poster Presentation",
+        "Date": "25/02/2026",
+        "Time": "10:00 AM - 2:00 PM",
+        "Venue": "Pharma Department",
+        "Coordinator": "Mr. Deepak Prasad, Mr. Anubhav Gupta"
+    },
+    {
+        "Sheet": "B.Pharm",
+        "SNo": "4",
+        "EventName": "Formulation Development",
+        "Date": "25/02/2026",
+        "Time": "10:00 AM - 2:00 PM",
+        "Venue": "Pharma Department",
+        "Coordinator": "Mr. Rakesh Yadav, Mr. Pankaj Maurya"
+    },
+    {
+        "Sheet": "B.Pharm",
+        "SNo": "5",
+        "EventName": "Herbal Shots (Flavonoid & Carotenoids)",
+        "Date": "25/02/2026",
+        "Time": "10:00 AM - 2:00 PM",
+        "Venue": "Pharma Department",
+        "Coordinator": "Mrs. Maulshree Bhandari, Mr. Sunil Kushwaha"
+    },
+    {
+        "Sheet": "B.Pharm",
+        "SNo": "6",
+        "EventName": "First Aid Competition",
+        "Date": "26/02/2026",
+        "Time": "10:00 AM - 2:00 PM",
+        "Venue": "Pharma Department",
+        "Coordinator": "Mrs. Sonam Patel, Ms. Manisha Dubey"
+    },
+    {
+        "Sheet": "B.Pharm",
+        "SNo": "7",
+        "EventName": "Pharma Expo",
+        "Date": "26/02/2026",
+        "Time": "10:00 AM - 2:00 PM",
+        "Venue": "Pharma Department",
+        "Coordinator": "Mr. Sant Laal, Om Prakash Sahani"
+    },
+    {
+        "Sheet": "B.Pharm",
+        "SNo": "8",
+        "EventName": "Pharmacy Rangoli",
+        "Date": "26/02/2026",
+        "Time": "10:00 AM - 2:00 PM",
+        "Venue": "Pharma Department",
+        "Coordinator": "Mrs. Sushma Chauhan, Mrs. Preet Kaur"
+    },
+    {
+        "Sheet": "B.Pharm",
+        "SNo": "9",
+        "EventName": "Best Out of Waste",
+        "Date": "26/02/2026",
+        "Time": "10:00 AM - 2:00 PM",
+        "Venue": "Pharma Department",
+        "Coordinator": "Ms. Aditi Singh"
+    },
+    {
+        "Sheet": "B.Pharm",
+        "SNo": "10",
+        "EventName": "Health Camp",
+        "Date": "26/02/2026",
+        "Time": "10:00 AM - 2:00 PM",
+        "Venue": "Pharma Department",
+        "Fee": "Free (₹200 for other colleges)",
+        "Coordinator": "Dr. Abhishek Gupta, Mrs. Surbhi Gupta"
+    },
+    {
+        "Sheet": "ECE",
+        "SNo": "1",
+        "EventName": "ROBO RACE (Robo Vega)",
+        "Date": "25th Feb 2026",
+        "Time": "10:00 AM - 1:00 PM",
+        "Venue": "Central Ground",
+        "Coordinator": "Mr. Pankaj Vishwakarma"
+    },
+    {
+        "Sheet": "ECE",
+        "SNo": "2",
+        "EventName": "Battle of Components (Circuit Samar)",
+        "Date": "25th Feb 2026",
+        "Time": "1:00 PM - 4:00 PM",
+        "Venue": "S2 & Embedded System Lab",
+        "Fee": "₹100",
+        "Coordinator": "Mrs. Anuja Singh, Mr. Pawan Kr. Sinha"
+    },
+    {
+        "Sheet": "ECE",
+        "SNo": "3",
+        "EventName": "ElectRONICA (Yantra Pragya Expo)",
+        "Date": "25th & 26th Feb 2026",
+        "Time": "10:00 AM - 4:00 PM",
+        "Venue": "ECE Department",
+        "Coordinator": "Mr. Pratap Gaurav Upadhyay"
+    },
+    {
+        "Sheet": "ECE",
+        "SNo": "4",
+        "EventName": "Guess the Gadget (Yantra Anumana)",
+        "Date": "26th Feb 2026",
+        "Time": "10:00 AM - 1:00 PM",
+        "Venue": "ECE Department",
+        "Fee": "₹100",
+        "Coordinator": "Mr. Lalit Kumar"
+    },
+    {
+        "Sheet": "EE",
+        "SNo": "1",
+        "EventName": "Maze Navigation Challenge",
+        "Date": "25th & 26th Feb 2026",
+        "Time": "10:00 AM - 4:00 PM",
+        "Venue": "Power Electronics Lab",
+        "Fee": "₹200",
+        "Coordinator": "Mr. Manu Kr. Singh, Vijay Singh Yadav"
+    },
+    {
+        "Sheet": "EE",
+        "SNo": "2",
+        "EventName": "Yantra Memory Grid",
+        "Date": "25th Feb 2026",
+        "Time": "11:00 AM - 12:30 PM",
+        "Venue": "F-1",
+        "Fee": "Free",
+        "Coordinator": "Mr. Surendra Khushwaha, Shreya Singh"
+    },
+    {
+        "Sheet": "EE",
+        "SNo": "3",
+        "EventName": "Steady Hand Game",
+        "Date": "25th & 26th Feb 2026",
+        "Time": "9:30 AM - 4:00 PM",
+        "Venue": "F-1",
+        "Fee": "₹100",
+        "Coordinator": "Mr. Avinash Prasad, Sindhu Raj"
+    },
+    {
+        "Sheet": "EE",
+        "SNo": "4",
+        "EventName": "Antardrishti Chitra – Blind Circuit Art",
+        "Date": "25th Feb 2026",
+        "Time": "2:00 PM - 4:00 PM",
+        "Venue": "F-1",
+        "Fee": "₹100",
+        "Coordinator": "Mr. Sandeep Singh, Sachi Kumari"
+    },
+    {
+        "Sheet": "EE",
+        "SNo": "5",
+        "EventName": "Watt's The Answer",
+        "Date": "26th Feb 2026",
+        "Time": "11:00 AM - 1:00 PM",
+        "Venue": "F-3",
+        "Fee": "₹100",
+        "Coordinator": "Mr. Sajjad Ali, Suhani Baranwal"
+    },
+    {
+        "Sheet": "EE",
+        "SNo": "6",
+        "EventName": "Volt Vision – Project Expo",
+        "Date": "25th & 26th Feb 2026",
+        "Time": "9:00 AM - 4:00 PM",
+        "Venue": "F-3",
+        "Coordinator": "Mr. S N Singh, Rohit Gautam"
+    },
+    {
+        "Sheet": "CSE",
+        "SNo": "1",
+        "EventName": "ROBO SOCCER",
+        "Date": "25 Feb 2026",
+        "Time": "10:00 AM",
+        "Venue": "D Block",
+        "Fee": "₹500",
+        "Coordinator": "Shreyansh Verma (9554353671)"
+    },
+    {
+        "Sheet": "CSE",
+        "SNo": "2",
+        "EventName": "NITRO RACE",
+        "Date": "25 Feb 2026",
+        "Time": "12:30 PM - 2:30 PM",
+        "Venue": "Central Ground",
+        "Fee": "₹500",
+        "Coordinator": "Dheeraj Patel (7007551376)"
+    },
+    {
+        "Sheet": "CSE",
+        "SNo": "3",
+        "EventName": "ROBO TUG OF WAR",
+        "Date": "25 Feb 2026",
+        "Time": "2:00 PM",
+        "Venue": "D Block",
+        "Fee": "₹500",
+        "Coordinator": "Satyaprakash (8423360360)"
+    },
+    {
+        "Sheet": "CSE",
+        "SNo": "4",
+        "EventName": "NEXUS 2026 – The Tech Quiz",
+        "Date": "26 Feb 2026",
+        "Time": "9:30 AM - 11:30 AM",
+        "Venue": "Lab 1",
+        "Fee": "₹100",
+        "Coordinator": "Veer Gupta (7007828218)"
+    },
+    {
+        "Sheet": "CSE",
+        "SNo": "5",
+        "EventName": "CODE MASTER",
+        "Date": "26 Feb 2026",
+        "Time": "1:00 PM - 3:30 PM",
+        "Venue": "Lab 1",
+        "Fee": "₹100",
+        "Coordinator": "Arpit (9532545307)"
+    },
+    {
+        "Sheet": "CSE",
+        "SNo": "6",
+        "EventName": "VIBE CODING",
+        "Date": "25 Feb 2026",
+        "Time": "10:00 AM - 2:00 PM",
+        "Venue": "Lab 1",
+        "Fee": "₹200",
+        "Coordinator": "Bal Mukund Kumar (9693233843)"
+    },
+    {
+        "Sheet": "CSE",
+        "SNo": "7",
+        "EventName": "BGMI",
+        "Date": "26 Feb 2026",
+        "Time": "11:30 AM - 1:30 PM",
+        "Venue": "G7 & G8",
+        "Fee": "₹100",
+        "Coordinator": "Suprit Yadav, Anshuman Sharma"
+    },
+    {
+        "Sheet": "CSE",
+        "SNo": "8",
+        "EventName": "THE HORCRUX HUNT",
+        "Date": "26 Feb 2026",
+        "Time": "11:30 AM - 1:30 PM",
+        "Venue": "College Campus",
+        "Fee": "₹150",
+        "Coordinator": "Manas Agrawal (8318690337)"
+    },
+    {
+        "Sheet": "CSE",
+        "SNo": "9",
+        "EventName": "VELOCITY VERTICES (Rubik's Cube)",
+        "Date": "26 Feb 2026",
+        "Time": "11:30 AM - 1:30 PM",
+        "Venue": "G2",
+        "Fee": "₹100",
+        "Coordinator": "Amardeep Kumar (7905032220)"
+    },
+    {
+        "Sheet": "CSE",
+        "SNo": "10",
+        "EventName": "ESCAPE ROOM",
+        "Date": "26 Feb 2026",
+        "Time": "11:30 AM - 1:30 PM",
+        "Venue": "G2",
+        "Fee": "₹150",
+        "Coordinator": "Smriti Verma (9236189910)"
+    },
+    {
+        "Sheet": "CSE",
+        "SNo": "11",
+        "EventName": "DEBATE CHARADES",
+        "Date": "26 Feb 2026",
+        "Time": "11:30 AM - 1:30 PM",
+        "Venue": "G3",
+        "Fee": "₹150",
+        "Coordinator": "Nikunj Srivastava (9621084001)"
+    },
+    {
+        "Sheet": "CSE",
+        "SNo": "12",
+        "EventName": "INTELLECT FUSION",
+        "Date": "26 Feb 2026",
+        "Time": "11:30 AM - 1:30 PM",
+        "Venue": "G6",
+        "Fee": "₹150",
+        "Coordinator": "Nidhi Yadav (7905623658)"
+    },
+    {
+        "Sheet": "CE",
+        "SNo": "1",
+        "EventName": "Ice Cream Stick Load Bearing",
+        "Date": "25th Feb 2026",
+        "Time": "10:30 AM",
+        "Venue": "Hydraulics Lab",
+        "Fee": "₹100",
+        "Coordinator": "Mr. Shubham Kumar Singh, Suyash Srivastava"
+    },
+    {
+        "Sheet": "CE",
+        "SNo": "2",
+        "EventName": "General Engineering Quiz",
+        "Date": "26th Feb 2026",
+        "Time": "10:30 AM",
+        "Venue": "F-7",
+        "Fee": "Free",
+        "Coordinator": "Mr. Anuj Kumar, Sunil Kumar Patel"
+    },
+    {
+        "Sheet": "CE",
+        "SNo": "3",
+        "EventName": "AutoCAD Drawing Competition",
+        "Date": "26th Feb 2026",
+        "Time": "10:30 AM",
+        "Venue": "CAD LAB",
+        "Fee": "Free",
+        "Coordinator": "Mr. Aman Jaiswal, Akhilesh Kumar"
+    },
+    {
+        "Sheet": "CE",
+        "SNo": "4",
+        "EventName": "Paper Tower Challenge",
+        "Date": "25th Feb 2026",
+        "Time": "10:30 AM",
+        "Venue": "F-5",
+        "Fee": "₹100",
+        "Coordinator": "Dr. Ashwani Kumar Sonkar, Praveen Kumar"
+    },
+    {
+        "Sheet": "ME",
+        "SNo": "1",
+        "EventName": "Junk Yard",
+        "Date": "25th Feb 2026",
+        "Time": "2:00 PM - 4:00 PM",
+        "Venue": "Workshop",
+        "Fee": "₹50",
+        "Coordinator": "Mr. Amit Kumar Jaiswal (7275006697)"
+    },
+    {
+        "Sheet": "ME",
+        "SNo": "2",
+        "EventName": "Model Exhibition",
+        "Date": "26th Feb 2026",
+        "Time": "9:30 AM - 11:00 AM",
+        "Venue": "Lawn",
+        "Fee": "₹50",
+        "Coordinator": "Mr. Vibhas Patel (7505441958)"
+    },
+    {
+        "Sheet": "ME",
+        "SNo": "3",
+        "EventName": "Picture Perception Test",
+        "Date": "26th Feb 2026",
+        "Time": "1:00 PM - 3:00 PM",
+        "Venue": "Seminar Hall 1",
+        "Fee": "₹50",
+        "Coordinator": "Mr. Abhay Kumar (9580905242)"
+    },
+    {
+        "Sheet": "ME",
+        "SNo": "4",
+        "EventName": "Graphica",
+        "Date": "25th Feb 2026",
+        "Time": "9:30 AM - 11:00 AM",
+        "Venue": "CAD/CAM Lab",
+        "Fee": "₹50",
+        "Coordinator": "Mr. Vibhash Km. Patel, Mr. Manish Kumar Singh"
+    },
+    {
+        "Sheet": "ME",
+        "SNo": "5",
+        "EventName": "Just Imagine",
+        "Date": "26th Feb 2026",
+        "Time": "1:00 PM - 3:00 PM",
+        "Venue": "Drawing Hall",
+        "Fee": "₹50",
+        "Coordinator": "Mr. Santosh Kumar (7905175731)"
+    },
+    {
+        "Sheet": "ME",
+        "SNo": "6",
+        "EventName": "Robotics Presentation",
+        "Date": "25th Feb 2026",
+        "Time": "12:30 PM - 2:00 PM",
+        "Venue": "Robotics Lab",
+        "Fee": "₹50",
+        "Coordinator": "Mr. Vibhas Kr. Patel (7505441958)"
+    },
+    {
+        "Sheet": "ASB",
+        "SNo": "1",
+        "EventName": "Ashoka Shark Tank",
+        "Date": "25th Feb 2026",
+        "Time": "11:00 AM - 12:30 PM",
+        "Venue": "G-11",
+        "Fee": "₹100",
+        "Coordinator": "Dr. Pradeep Kumar Sonkar, Ms. Anjali Pandey"
+    },
+    {
+        "Sheet": "ASB",
+        "SNo": "2",
+        "EventName": "Advert (Advertisement Making)",
+        "Date": "26th Feb 2026",
+        "Time": "11:00 AM - 12:30 PM",
+        "Venue": "G-10",
+        "Fee": "₹100",
+        "Coordinator": "Mr. B.N. Singh, Ms. Sanskriti Srivastava"
+    },
+    {
+        "Sheet": "ASB",
+        "SNo": "3",
+        "EventName": "No Fire, All Flavors (Cooking Without Fire)",
+        "Date": "25th Feb 2026",
+        "Time": "12:00 PM - 1:30 PM",
+        "Venue": "ASB Corridor",
+        "Fee": "₹50",
+        "Coordinator": "Dr. Sarika Singh, Ms. Roshani Yadav"
+    },
+    {
+        "Sheet": "ASB",
+        "SNo": "4",
+        "EventName": "Creative Reels",
+        "Date": "25th Feb 2026",
+        "Time": "TBA",
+        "Venue": "G-12",
+        "Fee": "₹100",
+        "Coordinator": "Dr. Kunjan Pandey, Ms. Geya Singh"
+    },
+    {
+        "Sheet": "ASB",
+        "SNo": "5",
+        "EventName": "Rangmanch / Automania",
+        "Date": "26th Feb 2026",
+        "Time": "12:00 PM - 1:00 PM",
+        "Venue": "D Block",
+        "Fee": "₹100",
+        "Coordinator": "Mr. Sushil Kumar, Ms. Layba Khan"
+    },
+    {
+        "Sheet": "CULTURAL",
+        "SNo": "1",
+        "EventName": "Hasna Mana Hai (Stand-Up Comedy)",
+        "Date": "27-02-2026",
+        "Time": "",
+        "Venue": "Buddha Hall (Ground Floor)",
+        "Fee": "₹100",
+        "Coordinator": "Rishikesh (9936466631)"
+    },
+    {
+        "Sheet": "CULTURAL",
+        "SNo": "2",
+        "EventName": "Melody in Sync (Solo Singing)",
+        "Date": "27-02-2026",
+        "Time": "",
+        "Venue": "New Seminar Hall",
+        "Fee": "₹100",
+        "Coordinator": "Stuti Srivastava (8808096022)"
+    },
+    {
+        "Sheet": "CULTURAL",
+        "SNo": "3",
+        "EventName": "Twin Tunes (Duet Singing)",
+        "Date": "27-02-2026",
+        "Time": "",
+        "Venue": "New Seminar Hall",
+        "Fee": "₹150",
+        "Coordinator": "Shreya Yadav (6386257445)"
+    },
+    {
+        "Sheet": "CULTURAL",
+        "SNo": "4",
+        "EventName": "Stagebound (Solo Dance)",
+        "Date": "27-02-2026",
+        "Time": "",
+        "Venue": "New Seminar Hall",
+        "Fee": "₹100",
+        "Coordinator": "Astha Keshari (6386170046)"
+    },
+    {
+        "Sheet": "CULTURAL",
+        "SNo": "5",
+        "EventName": "Dance Dazzle (Duet Dance)",
+        "Date": "27-02-2026",
+        "Time": "",
+        "Venue": "New Seminar Hall",
+        "Fee": "₹150",
+        "Coordinator": "Pranjali (8467938945)"
+    },
+    {
+        "Sheet": "CULTURAL",
+        "SNo": "6",
+        "EventName": "Style Spectrum (Fashion Show)",
+        "Date": "27-02-2026",
+        "Time": "",
+        "Venue": "New Seminar Hall",
+        "Coordinator": "Manas Agrawal (8318690337), Niyati Singh (9451378186)"
+    },
+    {
+        "Sheet": "Fine Arts",
+        "SNo": "1",
+        "EventName": "Comicmania (Comic Designing)",
+        "Date": "27/02/2026",
+        "Time": "10:00 AM - 2:00 PM",
+        "Venue": "Classroom G7",
+        "Fee": "₹100",
+        "Coordinator": "Abhinya Srivastava (6307485911)"
+    },
+    {
+        "Sheet": "Fine Arts",
+        "SNo": "2",
+        "EventName": "Moment in Motion (Time-Lapse Video)",
+        "Date": "27/02/2026",
+        "Time": "10:00 AM - 2:00 PM",
+        "Venue": "Classroom G8",
+        "Fee": "₹150",
+        "Coordinator": "Archit Singh (8887604928)"
+    },
+    {
+        "Sheet": "Fine Arts",
+        "SNo": "3",
+        "EventName": "Henna Hallows (Mandala Art with Henna)",
+        "Date": "27/02/2026",
+        "Time": "10:00 AM - 2:00 PM",
+        "Venue": "Classroom G9",
+        "Fee": "₹100",
+        "Coordinator": "Gauranshi (8957332234)"
+    },
+    {
+        "Sheet": "Fine Arts",
+        "SNo": "4",
+        "EventName": "Kala Darpan (Theme-Based Sketching)",
+        "Date": "27/02/2026",
+        "Time": "10:00 AM - 2:00 PM",
+        "Venue": "Graphics Lab",
+        "Fee": "₹100",
+        "Coordinator": "Arshya Rai (6393138630)"
+    },
+    {
+        "Sheet": "Fine Arts",
+        "SNo": "5",
+        "EventName": "Curl & Create (Quilling Art)",
+        "Date": "27/02/2026",
+        "Time": "10:00 AM - 2:00 PM",
+        "Venue": "Classroom G7",
+        "Fee": "₹100",
+        "Coordinator": "Suhani Baranwal (9026428616)"
+    },
+    {
+        "Sheet": "Literary",
+        "SNo": "1",
+        "EventName": "Panel Samvad",
+        "Date": "27 Feb 2026",
+        "Time": "10:30 AM",
+        "Venue": "Seminar Hall 1",
+        "Coordinator": "Dr. Priti Rai, Dr. Sarika Singh"
+    },
+    {
+        "Sheet": "Literary",
+        "SNo": "2",
+        "EventName": "Nari Talk – Financial Independence for Women",
+        "Date": "27 Feb 2026",
+        "Time": "11:40 AM",
+        "Venue": "Seminar Hall 1",
+        "Coordinator": "Dr. Shachi Tiwari"
+    },
+    {
+        "Sheet": "Literary",
+        "SNo": "3",
+        "EventName": "Declamation – Rise of Virtual Influencers",
+        "Date": "27 Feb 2026",
+        "Time": "12:30 PM",
+        "Venue": "Seminar Hall",
+        "Coordinator": "Ms. Sushmita Srivastava"
+    },
+    {
+        "Sheet": "Literary",
+        "SNo": "4",
+        "EventName": "Lafz & Layer – Kavita Sangrah",
+        "Date": "27 Feb 2026",
+        "Time": "2:00 PM",
+        "Venue": "Seminar Hall 1",
+        "Coordinator": "Mr. Awanish Srivastava"
+    }
+]
