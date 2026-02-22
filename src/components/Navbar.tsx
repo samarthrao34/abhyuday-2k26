@@ -54,7 +54,7 @@ export default function Navbar() {
         >
           <div className="px-4 md:px-6 flex items-center justify-between h-14 md:h-16">
             {/* Ashoka Logo */}
-            <Link to="/" className="flex items-center gap-2 shrink-0">
+            <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-2 shrink-0">
               <img
                 src={ashokaLogo}
                 alt="Ashoka Institute"

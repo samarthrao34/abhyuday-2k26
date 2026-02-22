@@ -10,6 +10,7 @@ import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import ParticleBackground from '@/components/ParticleBackground';
 import ScrollProgress from '@/components/ScrollProgress';
+import ScrollToTop from '@/components/ScrollToTop';
 
 const Index = () => {
   return (
@@ -26,6 +27,7 @@ const Index = () => {
       {/* <SponsorsSection /> */}
       <ContactSection />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };
