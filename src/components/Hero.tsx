@@ -31,7 +31,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="text-5xl md:text-7xl lg:text-8xl font-display font-black mb-6 gradient-text leading-tight"
+          className="text-5xl md:text-7xl lg:text-8xl font-display font-black mb-6 text-neon-purple neon-text-purple leading-tight"
         >
           {settings.heroText}
         </motion.h1>
