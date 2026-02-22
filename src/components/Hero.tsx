@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useData } from '@/contexts/DataContext';
 import CountdownTimer from './CountdownTimer';
-import heroBg from '@/assets/hero-bg.jpg';
+import heroBg from '@/assets/bg-image.png';
 
 export default function Hero() {
   const { settings } = useData();
