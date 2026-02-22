@@ -168,11 +168,11 @@ const defaultSponsors: Sponsor[] = [
 
 const defaultFeatures: Feature[] = [
   { id: "f1", title: "Events", value: "25+", icon: "🎪" },
-  { id: "f2", title: "Prize Pool", value: "₹5L+", icon: "🏆" },
+  { id: "f2", title: "Prize Pool", value: "₹2L+", icon: "🏆" },
   { id: "f3", title: "Workshops", value: "10+", icon: "🔧" },
   { id: "f4", title: "Participants", value: "2000+", icon: "👥" },
   { id: "f5", title: "Departments", value: "9+", icon: "🏛️" },
-  { id: "f6", title: "Days", value: "2", icon: "📅" },
+  { id: "f6", title: "Days", value: "4", icon: "📅" },
 ];
 
 const DataContext = createContext<DataContextType | undefined>(undefined);

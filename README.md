@@ -1,6 +1,10 @@
 # Welcome to your Lovable project
 
+<<<<<<< HEAD
 ## Project info....
+=======
+## Project info......
+>>>>>>> 0f75fdc85985c5902da04507b030d53b6b8ef0bf
 
 **URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
 
