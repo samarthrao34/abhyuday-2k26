@@ -12,14 +12,14 @@ export default function AdminLogin() {
   const navigate = useNavigate();
 
   if (isAdmin) {
-    navigate('/admin/dashboard');
+    navigate('/54FKGL300/dashboard');
     return null;
   }
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (login(email, password)) {
-      navigate('/admin/dashboard');
+      navigate('/54FKGL300/dashboard');
     } else {
       setError('Invalid credentials');
     }
@@ -58,7 +58,6 @@ export default function AdminLogin() {
           <button type="submit" className="glow-btn w-full">Login</button>
         </form>
 
-        <p className="text-xs text-muted-foreground text-center mt-6">Demo: admin@abhyuday.com / admin123</p>
       </motion.div>
     </div>
   );

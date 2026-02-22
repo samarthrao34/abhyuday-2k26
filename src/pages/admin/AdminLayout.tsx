@@ -3,21 +3,21 @@ import { useAuth } from '@/contexts/AuthContext';
 import { LayoutDashboard, Calendar, Users, Image, Handshake, Settings, Clock, LogOut, Home, FolderOpen } from 'lucide-react';
 
 const sidebarLinks = [
-  { to: '/admin/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
-  { to: '/admin/settings', icon: Settings, label: 'Settings' },
-  { to: '/admin/departments', icon: FolderOpen, label: 'Departments' },
-  { to: '/admin/events', icon: Calendar, label: 'Events' },
-  { to: '/admin/coordinators', icon: Users, label: 'Coordinators' },
-  { to: '/admin/timeline', icon: Clock, label: 'Timeline' },
-  { to: '/admin/gallery', icon: Image, label: 'Gallery' },
-  { to: '/admin/sponsors', icon: Handshake, label: 'Sponsors' },
+  { to: '/54FKGL300/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
+  { to: '/54FKGL300/settings', icon: Settings, label: 'Settings' },
+  { to: '/54FKGL300/departments', icon: FolderOpen, label: 'Departments' },
+  { to: '/54FKGL300/events', icon: Calendar, label: 'Events' },
+  { to: '/54FKGL300/coordinators', icon: Users, label: 'Coordinators' },
+  { to: '/54FKGL300/timeline', icon: Clock, label: 'Timeline' },
+  { to: '/54FKGL300/gallery', icon: Image, label: 'Gallery' },
+  { to: '/54FKGL300/sponsors', icon: Handshake, label: 'Sponsors' },
 ];
 
 export default function AdminLayout() {
   const { isAdmin, logout } = useAuth();
   const location = useLocation();
 
-  if (!isAdmin) return <Navigate to="/admin" replace />;
+  if (!isAdmin) return <Navigate to="/54FKGL300" replace />;
 
   return (
     <div className="min-h-screen bg-background flex">
@@ -32,11 +32,10 @@ export default function AdminLayout() {
             <Link
               key={to}
               to={to}
-              className={`flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm transition-colors ${
-                location.pathname === to
+              className={`flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm transition-colors ${location.pathname === to
                   ? 'bg-primary/10 text-primary'
                   : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
-              }`}
+                }`}
             >
               <Icon size={18} />
               {label}

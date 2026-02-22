@@ -131,14 +131,38 @@ const defaultCoordinators: Coordinator[] = [
 ];
 
 const defaultTimeline: TimelineItem[] = [
-  { id: "t1", day: "Day 1", title: "Opening Ceremony", time: "9:00 AM", description: "Grand inauguration with chief guest" },
-  { id: "t2", day: "Day 1", title: "Technical Events Begin", time: "10:30 AM", description: "Hackathon, Code Clash, Circuit Wizard kick off" },
-  { id: "t3", day: "Day 1", title: "Business Plan Pitch", time: "1:00 PM", description: "Aspiring entrepreneurs pitch their ideas" },
-  { id: "t4", day: "Day 1", title: "Gaming Arena Opens", time: "3:00 PM", description: "Esports tournaments begin" },
-  { id: "t5", day: "Day 2", title: "RoboWars", time: "10:00 AM", description: "The epic robot battle arena" },
-  { id: "t6", day: "Day 2", title: "Cultural Performances", time: "4:00 PM", description: "Dance, music, and drama" },
-  { id: "t7", day: "Day 2", title: "Prize Distribution", time: "7:00 PM", description: "Award ceremony and felicitation" },
-  { id: "t8", day: "Day 2", title: "Closing Ceremony", time: "8:30 PM", description: "Grand finale and DJ night" },
+  // ===== Day 1 — 25 Feb 2026 =====
+  { id: "t1", day: "Day 1 — 25 Feb", title: "Opening Ceremony & Inauguration", time: "9:00 AM", description: "Grand inauguration of Abhyuday'26 with chief guests and dignitaries" },
+  { id: "t2", day: "Day 1 — 25 Feb", title: "Vibe Coding | Code Master", time: "10:00 AM", description: "CS Cipher kicks off with coding challenges at Lab 1" },
+  { id: "t3", day: "Day 1 — 25 Feb", title: "Robo Soccer | Velocity Vertices (Rubik's Cube)", time: "10:00 AM", description: "Robotics events at D Block & Rubik's Cube at G-5" },
+  { id: "t4", day: "Day 1 — 25 Feb", title: "Intellect Fusion | Debate Charades", time: "10:30 AM", description: "Mind games at G-1 and debates at G-3 by CS Cipher" },
+  { id: "t5", day: "Day 1 — 25 Feb", title: "Pharma Health Camp & Herbal Shots", time: "10:00 AM", description: "Pharma events — health camp, herbal preparations, and more" },
+  { id: "t6", day: "Day 1 — 25 Feb", title: "EE Vidyutam & ECE Digital Dusk Events", time: "10:00 AM", description: "Maze challenges, circuit art, robo race & project exhibitions" },
+  { id: "t7", day: "Day 1 — 25 Feb", title: "ME Yantrika — Junk Yard & CAD", time: "10:00 AM", description: "Mechanical events — junk yard creation, CAD design contests" },
+  { id: "t8", day: "Day 1 — 25 Feb", title: "Civil Symposium — Paper Tower & AutoCAD", time: "10:00 AM", description: "Civil engineering challenges — paper tower, water supply & AutoCAD" },
+  { id: "t9", day: "Day 1 — 25 Feb", title: "Nitro Race | Robo Tug of War", time: "12:30 PM", description: "RC car racing at Central Ground & robot tug of war at D Block" },
+  { id: "t10", day: "Day 1 — 25 Feb", title: "BT Spark — Fun Games & Lab Experiments", time: "10:00 AM", description: "Biotechnology events — lab experiments, carrom, slow cycling & more" },
+
+  // ===== Day 2 — 26 Feb 2026 =====
+  { id: "t11", day: "Day 2 — 26 Feb", title: "Nexus 2026 — Tech Quiz", time: "9:30 AM", description: "CS Cipher's ultimate tech quiz at Lab 1" },
+  { id: "t12", day: "Day 2 — 26 Feb", title: "BGMI / Free Fire Tournament", time: "11:30 AM", description: "Mobile gaming battles at G7 & G8" },
+  { id: "t13", day: "Day 2 — 26 Feb", title: "The Escape Room", time: "10:30 AM", description: "Puzzle-solving room challenge at G-2 — duo teams only" },
+  { id: "t14", day: "Day 2 — 26 Feb", title: "The Horcrux Hunt", time: "11:30 AM", description: "Campus-wide treasure hunt — teams of 4" },
+  { id: "t15", day: "Day 2 — 26 Feb", title: "Code Master — Round 2", time: "1:00 PM", description: "Advanced coding challenge in C and Java at Lab 1" },
+  { id: "t16", day: "Day 2 — 26 Feb", title: "Pharma Quiz & Expo", time: "10:00 AM", description: "Pharmacy department quiz competition and expo" },
+  { id: "t17", day: "Day 2 — 26 Feb", title: "ASB Events — Shark Tank & Cooking", time: "10:00 AM", description: "Business pitches, cooking competition & reel-making at ASB" },
+  { id: "t18", day: "Day 2 — 26 Feb", title: "Management Ensemble Events", time: "10:00 AM", description: "Business plan pitches, GD competitions & poster gallery" },
+
+  // ===== Day 3 — 27 Feb 2026 =====
+  { id: "t19", day: "Day 3 — 27 Feb", title: "Panel Samvad — Panel Discussion", time: "10:30 AM", description: "Literary discussion panel at Seminar Hall 1" },
+  { id: "t20", day: "Day 3 — 27 Feb", title: "Nari Talks — Women's Empowerment", time: "11:40 AM", description: "Talks on financial independence for women at Seminar Hall 1" },
+  { id: "t21", day: "Day 3 — 27 Feb", title: "Declamation — Rise of Virtual Influencers", time: "12:30 PM", description: "Speech competition at Seminar Hall 1" },
+  { id: "t22", day: "Day 3 — 27 Feb", title: "Lafz & Layer — Poetry (Kavita Sangrah)", time: "2:00 PM", description: "Poetry and spoken word at Seminar Hall 1" },
+  { id: "t23", day: "Day 3 — 27 Feb", title: "Fine Art Kalakriti — Sketching, Quilling, Henna", time: "10:00 AM", description: "Art events — sketching, quilling art, henna design & comic strip at G-7" },
+  { id: "t24", day: "Day 3 — 27 Feb", title: "Cultural Rangmanch — Solo & Duet Dance", time: "12:00 PM", description: "Solo dance, duet dance & singing competitions at New Seminar Hall" },
+  { id: "t25", day: "Day 3 — 27 Feb", title: "Style Spectrum — Fashion Show", time: "3:00 PM", description: "Grand fashion show at New Seminar Hall" },
+  { id: "t26", day: "Day 3 — 27 Feb", title: "Hasna Mana Hai — Stand-Up Comedy", time: "4:00 PM", description: "Comedy performances at Buddha Hall" },
+  { id: "t27", day: "Day 3 — 27 Feb", title: "Closing Ceremony & Prize Distribution", time: "6:00 PM", description: "Grand finale — awards, felicitation & celebrations" },
 ];
 
 const defaultSponsors: Sponsor[] = [
@@ -161,7 +185,7 @@ const defaultFeatures: Feature[] = [
 const DataContext = createContext<DataContextType | undefined>(undefined);
 
 // Keys that should always use code defaults (fed from JSON), not localStorage cache
-const ALWAYS_USE_DEFAULTS = ['abhyuday_departments', 'abhyuday_events', 'abhyuday_gallery', 'abhyuday_settings'];
+const ALWAYS_USE_DEFAULTS = ['abhyuday_departments', 'abhyuday_events', 'abhyuday_gallery', 'abhyuday_settings', 'abhyuday_timeline'];
 
 function loadFromStorage<T>(key: string, fallback: T): T {
   if (ALWAYS_USE_DEFAULTS.includes(key)) return fallback;

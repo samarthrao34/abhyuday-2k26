@@ -36,8 +36,8 @@ const App = () => (
               <Route path="/department/:id" element={<DepartmentEvents />} />
               <Route path="/event/:id" element={<EventDetails />} />
               <Route path="/search" element={<SearchPage />} />
-              <Route path="/admin" element={<AdminLogin />} />
-              <Route path="/admin" element={<AdminLayout />}>
+              <Route path="/54FKGL300" element={<AdminLogin />} />
+              <Route path="/54FKGL300" element={<AdminLayout />}>
                 <Route path="dashboard" element={<AdminDashboard />} />
                 <Route path="settings" element={<AdminSettings />} />
                 <Route path="departments" element={<AdminDepartments />} />
