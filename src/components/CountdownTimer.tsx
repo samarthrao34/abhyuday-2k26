@@ -7,7 +7,12 @@ export default function CountdownTimer() {
 
   useEffect(() => {
     const update = () => {
-      const target = new Date(settings.festDate).getTime();
+      // Ensure festDate is always parsed in IST (+05:30) for consistent countdown
+      let dateStr = settings.festDate;
+      if (!dateStr.match(/[+-]\d{2}:\d{2}$/) && !dateStr.endsWith('Z')) {
+        dateStr += '+05:30';
+      }
+      const target = new Date(dateStr).getTime();
       const now = Date.now();
       const diff = Math.max(0, target - now);
       setTime({
