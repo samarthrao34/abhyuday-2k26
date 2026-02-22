@@ -103,7 +103,7 @@ interface DataContextType {
 }
 
 const defaultSettings: SiteSettings = {
-  collegeName: "National Institute of Technology",
+  collegeName: "Ashoka Institute of Technology & Management, Varanasi",
   festName: "ABHYUDAY'26",
   tagline: "Annual Techno-Cultural Fest",
   logo: "",
