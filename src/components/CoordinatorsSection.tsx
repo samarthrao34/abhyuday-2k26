@@ -23,9 +23,13 @@ export default function CoordinatorsSection() {
               transition={{ delay: i * 0.05 }}
               className="glass-card-hover p-6 text-center"
             >
-              <div className="w-20 h-20 rounded-full bg-muted mx-auto mb-4 flex items-center justify-center text-3xl font-display gradient-text border border-primary/20">
-                {c.name.charAt(0)}
-              </div>
+              {c.photo ? (
+                <img src={c.photo} alt={c.name} className="w-20 h-20 rounded-full mx-auto mb-4 object-cover border border-primary/20" />
+              ) : (
+                <div className="w-20 h-20 rounded-full bg-muted mx-auto mb-4 flex items-center justify-center text-3xl font-display gradient-text border border-primary/20">
+                  {c.name.charAt(0)}
+                </div>
+              )}
               <h3 className="text-lg font-heading font-semibold text-foreground">{c.name}</h3>
               <p className="text-sm text-primary font-display mt-1">{c.role}</p>
               <p className="text-xs text-muted-foreground mt-1">{c.department}</p>

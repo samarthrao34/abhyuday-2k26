@@ -122,12 +122,12 @@ const defaultDepartments: Department[] = generatedDepartments as Department[];
 const defaultEvents: EventItem[] = generatedEvents as EventItem[];
 
 const defaultCoordinators: Coordinator[] = [
-  { id: "c1", name: "Dr. Rajesh Sharma", photo: "", role: "Faculty Advisor", phone: "+91 98765 00001", email: "rajesh@nit.edu", department: "Management", social: {} },
-  { id: "c2", name: "Arjun Mehta", photo: "", role: "Overall Coordinator", phone: "+91 98765 00002", email: "arjun@abhyuday.com", department: "Computer Science", social: { linkedin: "#" } },
-  { id: "c3", name: "Kavya Nair", photo: "", role: "Cultural Secretary", phone: "+91 98765 00003", email: "kavya@abhyuday.com", department: "Cultural", social: { instagram: "#" } },
-  { id: "c4", name: "Vikram Singh", photo: "", role: "Technical Head", phone: "+91 98765 00004", email: "vikram@abhyuday.com", department: "Computer Science", social: {} },
-  { id: "c5", name: "Riya Patel", photo: "", role: "Sponsorship Head", phone: "+91 98765 00005", email: "riya@abhyuday.com", department: "Management", social: {} },
-  { id: "c6", name: "Aditya Kumar", photo: "", role: "Event Manager", phone: "+91 98765 00006", email: "aditya@abhyuday.com", department: "Mechanical", social: {} },
+  { id: "c1", name: "Pankaj Srivastava", photo: "/coordinators/pankaj-srivastava.png", role: "Faculty", phone: "+91 94551 06460", email: "", department: "Computer Science", social: {} },
+  { id: "c2", name: "Er. Arvind Kumar", photo: "", role: "Faculty", phone: "+91 831 706 6128", email: "", department: "Computer Science", social: {} },
+  { id: "c3", name: "Dr. Sharmila Singh", photo: "/coordinators/sharmila-singh.jpg", role: "Faculty", phone: "+91 831 706 6128", email: "", department: "MBA", social: {} },
+  { id: "c4", name: "Aditya Dubey", photo: "", role: "Student Coordinator", phone: "+91 89320 56388", email: "", department: "Computer Science", social: {} },
+  { id: "c5", name: "Diwakar Patel", photo: "", role: "Student Coordinator", phone: "+91 92355 08350", email: "", department: "Computer Science", social: {} },
+  { id: "c6", name: "Sobrat Dayal", photo: "/coordinators/sobrat-dayal.png", role: "Student Coordinator", phone: "+91 95656 76988", email: "", department: "Computer Science", social: {} },
 ];
 
 const defaultTimeline: TimelineItem[] = [
@@ -184,11 +184,21 @@ const defaultFeatures: Feature[] = [
 
 const DataContext = createContext<DataContextType | undefined>(undefined);
 
-// Keys that should always use code defaults (fed from JSON), not localStorage cache
-const ALWAYS_USE_DEFAULTS = ['abhyuday_departments', 'abhyuday_events', 'abhyuday_gallery', 'abhyuday_settings', 'abhyuday_timeline'];
+// Bump this version whenever code defaults change to flush stale localStorage
+const DATA_VERSION = "v4";
+
+// One-time migration: clear stale data when code version changes
+const ALL_KEYS = [
+  'abhyuday_settings', 'abhyuday_departments', 'abhyuday_events',
+  'abhyuday_coordinators', 'abhyuday_timeline', 'abhyuday_sponsors',
+  'abhyuday_gallery', 'abhyuday_features',
+];
+if (localStorage.getItem('abhyuday_data_version') !== DATA_VERSION) {
+  ALL_KEYS.forEach(k => localStorage.removeItem(k));
+  localStorage.setItem('abhyuday_data_version', DATA_VERSION);
+}
 
 function loadFromStorage<T>(key: string, fallback: T): T {
-  if (ALWAYS_USE_DEFAULTS.includes(key)) return fallback;
   try {
     const stored = localStorage.getItem(key);
     return stored ? JSON.parse(stored) : fallback;
