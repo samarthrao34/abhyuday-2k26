@@ -123,7 +123,7 @@ const defaultEvents: EventItem[] = generatedEvents as EventItem[];
 
 const defaultCoordinators: Coordinator[] = [
   { id: "c1", name: "Pankaj Srivastava", photo: "/coordinators/pankaj-srivastava.png", role: "Faculty", phone: "+91 94551 06460", email: "", department: "Computer Science", social: {} },
-  { id: "c2", name: "Er. Arvind Kumar", photo: "", role: "Faculty", phone: "+91 831 706 6128", email: "", department: "Computer Science", social: {} },
+  { id: "c2", name: "Er. Arvind Kumar", photo: "/coordinators/arvind-kumar.jpg", role: "Faculty", phone: "+91 831 706 6128", email: "", department: "Computer Science", social: {} },
   { id: "c3", name: "Dr. Sharmila Singh", photo: "/coordinators/sharmila-singh.jpg", role: "Faculty", phone: "+91 831 706 6128", email: "", department: "MBA", social: {} },
   { id: "c4", name: "Aditya Dubey", photo: "/coordinators/aditya-dubey.png", role: "Student Coordinator", phone: "+91 89320 56388", email: "", department: "Computer Science", social: {} },
   { id: "c5", name: "Sonu Dubey", photo: "/coordinators/sonu-dubey.png", role: "Student Coordinator", phone: "+91 92355 08350", email: "", department: "Computer Science", social: {} },
